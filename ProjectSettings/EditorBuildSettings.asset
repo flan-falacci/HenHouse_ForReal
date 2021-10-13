@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartHouse.unity
+    guid: 12ea432660019554283090ce3428d8c4
+  - enabled: 1
+    path: Assets/Scenes/a1.unity
+    guid: f2279ce1fd89d47bcb55dab7fd11374b
+  - enabled: 1
+    path: Assets/Scenes/b1.unity
+    guid: d5f9e19f795e942c7954927dcc183c1f
+  - enabled: 1
+    path: Assets/Scenes/c1.unity
+    guid: fa41e42fa8c3a47968683b5c535f813c
+  - enabled: 1
+    path: Assets/Scenes/StartHouse2.unity
+    guid: 9fe843c1d075b4d268103d364218106a
+  - enabled: 1
+    path: Assets/Scenes/a2.unity
+    guid: a5acac3ea9726454699345df58847ba2
+  - enabled: 1
+    path: Assets/Scenes/b2.unity
+    guid: 4830bfe2318624d4b81e6dc01e70a76f
+  - enabled: 1
+    path: Assets/Scenes/c2.unity
+    guid: 49ed34dacefa34c15a1648ddaedee770
+  - enabled: 1
+    path: Assets/Scenes/StartHouse3.unity
+    guid: ab713f8754163440cad9cf459310abc0
+  - enabled: 1
+    path: Assets/Scenes/a3.unity
+    guid: fd112196ff8e64f2cb006586b9371bb8
+  - enabled: 1
+    path: Assets/Scenes/b3.unity
+    guid: 39fd98208ecb64be5a2786761ccc9805
+  - enabled: 1
+    path: Assets/Scenes/c3.unity
+    guid: 1b3598a7220554d23978abe7561b28ca
+  m_configObjects: {}
