@@ -17,9 +17,9 @@ public class exitTunnel : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player")
         {
             Debug.Log("exited tunnel");
             SceneManager.LoadScene("StartHouse2");
