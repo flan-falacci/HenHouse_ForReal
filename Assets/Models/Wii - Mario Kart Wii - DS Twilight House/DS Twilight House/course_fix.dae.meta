@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 893b05629250bcd4683bd71f34e47178
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: old_House_ds
+    100004: polygon0
+    100006: polygon0b
+    100008: polygon1
+    100010: polygon10
+    100012: polygon15
+    100014: polygon17
+    100016: polygon1b
+    100018: polygon2
+    100020: polygon20
+    100022: polygon22
+    100024: polygon23
+    100026: polygon24
+    100028: polygon26
+    100030: polygon3
+    100032: polygon35
+    100034: polygon4
+    100036: polygon5
+    100038: polygon6
+    400000: //RootNode
+    400002: old_House_ds
+    400004: polygon0
+    400006: polygon0b
+    400008: polygon1
+    400010: polygon10
+    400012: polygon15
+    400014: polygon17
+    400016: polygon1b
+    400018: polygon2
+    400020: polygon20
+    400022: polygon22
+    400024: polygon23
+    400026: polygon24
+    400028: polygon26
+    400030: polygon3
+    400032: polygon35
+    400034: polygon4
+    400036: polygon5
+    400038: polygon6
+    2100000: a_Roof
+    2100002: a_Fresco
+    2100004: b_window
+    2100006: a_Brick_Y
+    2100008: b_Iron_railing01
+    2100010: b_window2
+    2100012: a_Brick_R
+    2100014: a_Beam
+    2100016: kabe
+    2100018: b_Iron_railing02
+    2100020: a_WALL2
+    2100022: a_Light
+    2100024: a_WAll1
+    2100026: b_Shine
+    2100028: shadow
+    2100030: a_StonePave01
+    2100032: a_StonePave02
+    4300000: polygon35
+    4300002: polygon26
+    4300004: polygon24
+    4300006: polygon23
+    4300008: polygon22
+    4300010: polygon20
+    4300012: polygon17
+    4300014: polygon15
+    4300016: polygon10
+    4300018: polygon6
+    4300020: polygon5
+    4300022: polygon4
+    4300024: polygon3
+    4300026: polygon2
+    4300028: polygon1b
+    4300030: polygon1
+    4300032: polygon0b
+    4300034: polygon0
+    9500000: //RootNode
+    13700000: polygon0
+    13700002: polygon0b
+    13700004: polygon1
+    13700006: polygon10
+    13700008: polygon15
+    13700010: polygon17
+    13700012: polygon1b
+    13700014: polygon2
+    13700016: polygon20
+    13700018: polygon22
+    13700020: polygon23
+    13700022: polygon24
+    13700024: polygon26
+    13700026: polygon3
+    13700028: polygon35
+    13700030: polygon4
+    13700032: polygon5
+    13700034: polygon6
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

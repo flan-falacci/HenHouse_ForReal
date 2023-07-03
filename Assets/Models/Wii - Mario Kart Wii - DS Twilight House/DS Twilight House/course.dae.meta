@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 54b1d130fccc8334fba1c61b08ff0a57
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: old_House_ds
+    100004: polygon0
+    100006: polygon1
+    100008: polygon10
+    100010: polygon15
+    100012: polygon17
+    100014: polygon2
+    100016: polygon20
+    100018: polygon22
+    100020: polygon23
+    100022: polygon24
+    100024: polygon26
+    100026: polygon3
+    100028: polygon35
+    100030: polygon4
+    100032: polygon5
+    100034: polygon6
+    400000: //RootNode
+    400002: old_House_ds
+    400004: polygon0
+    400006: polygon1
+    400008: polygon10
+    400010: polygon15
+    400012: polygon17
+    400014: polygon2
+    400016: polygon20
+    400018: polygon22
+    400020: polygon23
+    400022: polygon24
+    400024: polygon26
+    400026: polygon3
+    400028: polygon35
+    400030: polygon4
+    400032: polygon5
+    400034: polygon6
+    2100000: a_StonePave02
+    2100002: a_StonePave01
+    2100004: b_Shine
+    2100006: a_WAll1
+    2100008: a_Light
+    2100010: a_WALL2
+    2100012: b_Iron_railing02
+    2100014: kabe
+    2100016: a_Beam
+    2100018: a_Brick_R
+    2100020: b_window2
+    2100022: b_Iron_railing01
+    2100024: a_Brick_Y
+    2100026: b_window
+    2100028: a_Fresco
+    2100030: a_Roof
+    4300000: polygon0
+    4300002: polygon1
+    4300004: polygon2
+    4300006: polygon3
+    4300008: polygon4
+    4300010: polygon5
+    4300012: polygon6
+    4300014: polygon10
+    4300016: polygon15
+    4300018: polygon17
+    4300020: polygon20
+    4300022: polygon22
+    4300024: polygon23
+    4300026: polygon24
+    4300028: polygon26
+    4300030: polygon35
+    9500000: //RootNode
+    13700000: polygon0
+    13700002: polygon1
+    13700004: polygon10
+    13700006: polygon15
+    13700008: polygon17
+    13700010: polygon2
+    13700012: polygon20
+    13700014: polygon22
+    13700016: polygon23
+    13700018: polygon24
+    13700020: polygon26
+    13700022: polygon3
+    13700024: polygon35
+    13700026: polygon4
+    13700028: polygon5
+    13700030: polygon6
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

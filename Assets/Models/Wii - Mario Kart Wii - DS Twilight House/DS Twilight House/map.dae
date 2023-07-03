@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2020-05-21T03:04:32Z</created>
+		<modified>2020-05-21T03:04:32Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_materials>
+		<material id="lambert3">
+			<instance_effect url="#lambert3-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="lambert3-fx" name="lambert3">
+			<profile_COMMON>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse />
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="444">-3240 2000 9240 -5340 2000 9240 -3240 2000 7140 -3240 2000 5340 -3000 2000 7140 -3000 2000 5340 3000 2000 7140 3000 2000 5340 3240 2000 7140 3240 2000 5340 5340 2000 9240 5340 2000 3240 7140 2000 3240 7140 2000 3000 9480 2000 -900 9480 2000 -5340 10680 2000 -3120 9480 2000 -7140 10680 2000 -9480 9480 2000 -9480 9480 2000 -10680 7140 2000 -9480 5340 2000 -9480 5340 2000 -9240 9240 2000 9240 7140 2000 9240 9240 2000 7140 9240 2000 5340 9480 2000 7140 9480 2000 5340 10680 2000 9480 10680 2000 3120 9240 2000 3000 9240 2000 900 9240 2000 -900 9480 2000 900 3000 2000 -9240 3000 2000 -7140 900 2000 -9240 -900 2000 -9240 900 2000 -9480 -900 2000 -9480 3120 2000 -10680 -3120 2000 -10680 -9480 2000 -9480 -9480 2000 -7140 -10680 2000 -9480 -9480 2000 -5340 -10680 2000 -3120 -9480 2000 -900 -9480 2000 900 -9240 2000 900 -900 2000 9240 900 2000 9240 -900 2000 9480 900 2000 9480 3120 2000 10680 5340 2000 9480 9480 2000 10680 7140 2000 9480 9240 2000 -3000 7140 2000 -3000 5340 2000 -3000 5340 2000 3000 3240 2000 3000 -3000 2000 -9240 -3000 2000 -7140 -3000 2000 -5340 3000 2000 -5340 3000 2000 -3240 3240 2000 -9240 3240 2000 -7140 5340 2000 -3240 3240 2000 -5340 3240 2000 -3240 9240 2000 -9240 9240 2000 -7140 7140 2000 -9240 7140 2000 -3240 -3240 2000 -9240 -3240 2000 -6840 -5340 2000 -9240 -5340 2000 -3240 -7140 2000 -3240 -7140 2000 -3000 11880 2000 9480 11880 2000 11880 9480 2000 9480 -9240 2000 -9240 -7140 2000 -9240 -9240 2000 -6840 -9240 2000 -5640 -9240 2000 -3240 9240 2000 3240 -3240 2000 3240 -5340 2000 3240 -7140 2000 9240 -7140 2000 9480 -11880 2000 -9480 -11880 2000 -11880 -9480 2000 -10680 -7140 2000 -9480 -9240 2000 -3000 -9240 2000 -900 -7140 2000 3000 -9240 2000 3000 3000 2000 9240 -3000 2000 9240 -9240 2000 9240 -9240 2000 7140 -9240 2000 5340 -7140 2000 3240 -9240 2000 3240 9240 2000 -3240 9240 2000 -5340 -9480 2000 5340 -9480 2000 7140 -10680 2000 3120 -10680 2000 9480 -11880 2000 9480 -11880 2000 11880 -9480 2000 10680 -9480 2000 11880 11880 2000 -9480 11880 2000 -11880 9480 2000 -11880 -5340 2000 -9480 -5340 2000 3000 -3240 2000 3000 -3240 2000 -3000 -5340 2000 -3000 -3000 2000 3240 3000 2000 3240 -3120 2000 10680 -5340 2000 9480 -3240 2000 -3240 -3240 2000 -5640 -9480 2000 9480 -3240 2000 -7140 -3240 2000 -5340 -9240 2000 -7140 -9240 2000 -5340 9480 2000 11880 3240 2000 3240 3240 2000 9240 -9480 2000 -11880 3240 2000 -3000 -3000 2000 -3240</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="148" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="4">1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="1" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="lambert3" count="168">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="1" />
+					<p>2 0 1 0 0 0 3 0 1 0 2 0 4 0 3 0 2 0 5 0 3 0 4 0 6 0 5 0 4 0 7 0 5 0 6 0 8 0 7 0 6 0 9 0 7 0 8 0 10 0 9 0 8 0 11 0 9 0 10 0 12 0 11 0 10 0 13 0 11 0 12 0 16 0 15 0 14 0 17 0 15 0 16 0 18 0 17 0 16 0 19 0 17 0 18 0 20 0 19 0 18 0 21 0 19 0 20 0 22 0 21 0 20 0 23 0 21 0 22 0 26 0 25 0 24 0 27 0 25 0 26 0 28 0 27 0 26 0 29 0 27 0 28 0 30 0 29 0 28 0 31 0 29 0 30 0 33 0 13 0 32 0 34 0 13 0 33 0 35 0 34 0 33 0 14 0 34 0 35 0 31 0 14 0 35 0 16 0 14 0 31 0 38 0 37 0 36 0 39 0 37 0 38 0 40 0 39 0 38 0 41 0 39 0 40 0 42 0 41 0 40 0 43 0 41 0 42 0 46 0 45 0 44 0 47 0 45 0 46 0 48 0 47 0 46 0 49 0 47 0 48 0 50 0 49 0 48 0 51 0 49 0 50 0 54 0 53 0 52 0 55 0 53 0 54 0 56 0 55 0 54 0 57 0 55 0 56 0 58 0 57 0 56 0 59 0 57 0 58 0 61 0 34 0 60 0 13 0 34 0 61 0 62 0 13 0 61 0 63 0 13 0 62 0 64 0 63 0 62 0 66 0 39 0 65 0 37 0 39 0 66 0 67 0 37 0 66 0 68 0 37 0 67 0 69 0 68 0 67 0 71 0 23 0 70 0 72 0 23 0 71 0 73 0 72 0 71 0 74 0 72 0 73 0 77 0 76 0 75 0 78 0 76 0 77 0 72 0 78 0 77 0 62 0 78 0 72 0 81 0 80 0 79 0 82 0 80 0 81 0 83 0 82 0 81 0 84 0 82 0 83 0 30 0 86 0 85 0 58 0 86 0 30 0 87 0 58 0 30 0 59 0 58 0 87 0 90 0 89 0 88 0 83 0 89 0 90 0 91 0 83 0 90 0 92 0 83 0 91 0 12 0 27 0 93 0 25 0 27 0 12 0 10 0 25 0 12 0 57 0 25 0 10 0 95 0 3 0 94 0 1 0 3 0 95 0 96 0 1 0 95 0 97 0 1 0 96 0 46 0 99 0 98 0 100 0 99 0 46 0 44 0 100 0 46 0 101 0 100 0 44 0 103 0 84 0 102 0 104 0 84 0 103 0 51 0 104 0 103 0 105 0 104 0 51 0 6 0 53 0 106 0 52 0 53 0 6 0 4 0 52 0 6 0 107 0 52 0 4 0 96 0 109 0 108 0 110 0 109 0 96 0 111 0 110 0 96 0 112 0 110 0 111 0 114 0 78 0 113 0 76 0 78 0 114 0 15 0 76 0 114 0 17 0 76 0 15 0 115 0 109 0 110 0 116 0 109 0 115 0 117 0 116 0 115 0 118 0 116 0 117 0 120 0 118 0 119 0 121 0 118 0 120 0 122 0 121 0 120 0 124 0 18 0 123 0 20 0 18 0 124 0 125 0 20 0 124 0 43 0 126 0 41 0 101 0 126 0 43 0 100 0 101 0 43 0 81 0 89 0 83 0 126 0 89 0 81 0 77 0 23 0 72 0 21 0 23 0 77 0 95 0 111 0 96 0 127 0 111 0 95 0 129 0 127 0 128 0 130 0 127 0 129 0 7 0 131 0 5 0 132 0 131 0 7 0 22 0 42 0 40 0 20 0 42 0 22 0 54 0 133 0 56 0 134 0 133 0 54 0 136 0 82 0 135 0 80 0 82 0 136 0 118 0 137 0 116 0 121 0 137 0 118 0 50 0 117 0 115 0 48 0 117 0 50 0 121 0 97 0 137 0 133 0 97 0 121 0 138 0 67 0 66 0 139 0 67 0 138 0 37 0 73 0 71 0 68 0 73 0 37 0 134 0 97 0 133 0 1 0 97 0 134 0 84 0 130 0 82 0 104 0 130 0 84 0 104 0 127 0 130 0 111 0 127 0 104 0 45 0 141 0 140 0 47 0 141 0 45 0 86 0 58 0 142 0 9 0 11 0 143 0 144 0 10 0 8 0 145 0 99 0 100 0 31 0 35 0 29 0 87 0 30 0 28 0 62 0 146 0 64 0 13 0 63 0 11 0 67 0 147 0 69 0 103 0 49 0 51 0 61 0 78 0 62 0 126 0 101 0 89 0 57 0 59 0 25 0</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="3">map posLD posRU</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="3">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="48">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 18672.01 0 1 0 0 0 0 1 -18681.7 0 0 0 1 1 0 0 -18715.45 0 1 0 0 0 0 1 18705.77 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="3" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="148">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="map" name="map" sid="map" type="JOINT">
+				<node id="posLD" name="posLD" sid="posLD" type="JOINT">
+					<translate>-18672.01 0 18681.7</translate>
+				</node>
+				<node id="posRU" name="posRU" sid="posRU" type="JOINT">
+					<translate>18715.45 0 -18705.77</translate>
+				</node>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#map</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="lambert3" target="#lambert3" />
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

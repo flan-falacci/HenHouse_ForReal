@@ -5,11 +5,14 @@ using UnityEngine;
 public class simpleMove : MonoBehaviour
 {
     public float speed;
+    float startSpeed; 
     float yPos;
+    public bool noSprintMode; 
 
     void Start()
     {
         yPos = transform.position.y;
+        startSpeed = speed; 
     }
 
     void Update()
@@ -33,5 +36,15 @@ public class simpleMove : MonoBehaviour
         {
             transform.position += -transform.forward * speed;
         }
+
+        if ((Input.GetKey(KeyCode.LeftShift)) && (!noSprintMode))
+        {
+            speed = 1;
+        }
+        else
+        {
+            speed = startSpeed; 
+        }
+        
     }
 }
