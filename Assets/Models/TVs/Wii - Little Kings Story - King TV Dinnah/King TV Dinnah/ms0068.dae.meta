@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 517b31baccaf4a3498a095d9a19e68f0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ad_grd00
+    100002: ad_grd01
+    100004: ad_grd02
+    100006: ad_grd03
+    100008: ad_grd04
+    100010: ad_grd05
+    100012: ad_grd06
+    100014: ad_grd07
+    100016: antena
+    100018: c
+    100020: ch1
+    100022: chest
+    100024: head
+    100026: L_arm
+    100028: L_elbow
+    100030: L_foot
+    100032: L_hand
+    100034: L_knee
+    100036: L_leg
+    100038: LV1SP_00
+    100040: LV1SP_01
+    100042: ms
+    100044: //RootNode
+    100046: polygon0
+    100048: polygon1
+    100050: polygon2
+    100052: polygon3
+    100054: polygon4
+    100056: polygon5
+    100058: R_arm
+    100060: R_elbow
+    100062: R_foot
+    100064: R_hand
+    100066: R_knee
+    100068: R_leg
+    100070: root
+    400000: ad_grd00
+    400002: ad_grd01
+    400004: ad_grd02
+    400006: ad_grd03
+    400008: ad_grd04
+    400010: ad_grd05
+    400012: ad_grd06
+    400014: ad_grd07
+    400016: antena
+    400018: c
+    400020: ch1
+    400022: chest
+    400024: head
+    400026: L_arm
+    400028: L_elbow
+    400030: L_foot
+    400032: L_hand
+    400034: L_knee
+    400036: L_leg
+    400038: LV1SP_00
+    400040: LV1SP_01
+    400042: ms
+    400044: //RootNode
+    400046: polygon0
+    400048: polygon1
+    400050: polygon2
+    400052: polygon3
+    400054: polygon4
+    400056: polygon5
+    400058: R_arm
+    400060: R_elbow
+    400062: R_foot
+    400064: R_hand
+    400066: R_knee
+    400068: R_leg
+    400070: root
+    2100000: cap_m
+    2100002: body_m_SPC
+    2100004: body_m
+    2100006: face_eye_m02_SPC
+    2100008: face_eye_m01_SPC
+    2100010: cap_m__SPC
+    4300000: polygon0
+    4300002: polygon1
+    4300004: polygon2
+    4300006: polygon3
+    4300008: polygon4
+    4300010: polygon5
+    9500000: //RootNode
+    13700000: polygon0
+    13700002: polygon1
+    13700004: polygon2
+    13700006: polygon3
+    13700008: polygon4
+    13700010: polygon5
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
