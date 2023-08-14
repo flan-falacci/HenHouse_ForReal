@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 3300abd54f4b3a241890a4654f8da40e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ashblack1Shape
+    100002: fire11Shape
+    100004: fire1Shape
+    100006: fire2_3Shape
+    100008: fire2_4Shape
+    100010: fire4Shape
+    100012: fire5Shape
+    100014: fire7Shape
+    100016: fire8Shape
+    100018: FirePlace_AshShape
+    100020: FirePlace_Firewood_B_0Shape
+    100022: FirePlace_Firewood_B_1Shape
+    100024: FirePlace_Firewood_B_2Shape
+    100026: FirePlace_Firewood_B_3Shape
+    100028: FirePlace_Firewood_B_4Shape
+    100030: FirePlace_Firewood_B_5Shape
+    100032: fireShape6
+    100034: groupShape32
+    100036: groupShape32 1
+    100038: groupShape32 2
+    100040: InShape
+    100042: InShape 1
+    100044: InShape 10
+    100046: InShape 11
+    100048: InShape 12
+    100050: InShape 13
+    100052: InShape 14
+    100054: InShape 15
+    100056: InShape 16
+    100058: InShape 17
+    100060: InShape 18
+    100062: InShape 19
+    100064: InShape 2
+    100066: InShape 20
+    100068: InShape 21
+    100070: InShape 22
+    100072: InShape 23
+    100074: InShape 24
+    100076: InShape 25
+    100078: InShape 3
+    100080: InShape 4
+    100082: InShape 5
+    100084: InShape 6
+    100086: InShape 7
+    100088: InShape 8
+    100090: InShape 9
+    100092: monitor_effect2Shape
+    100094: Monitor_offShape
+    100096: Monitor_onShape
+    100098: //RootNode
+    100100: S06_Room_CountryShape
+    100102: woodred1Shape
+    100104: woodred3Shape
+    100106: woodred4Shape
+    100108: woodred5Shape
+    100110: woodred6Shape
+    100112: woodredShape
+    100114: woodredShape2
+    400000: ashblack1Shape
+    400002: fire11Shape
+    400004: fire1Shape
+    400006: fire2_3Shape
+    400008: fire2_4Shape
+    400010: fire4Shape
+    400012: fire5Shape
+    400014: fire7Shape
+    400016: fire8Shape
+    400018: FirePlace_AshShape
+    400020: FirePlace_Firewood_B_0Shape
+    400022: FirePlace_Firewood_B_1Shape
+    400024: FirePlace_Firewood_B_2Shape
+    400026: FirePlace_Firewood_B_3Shape
+    400028: FirePlace_Firewood_B_4Shape
+    400030: FirePlace_Firewood_B_5Shape
+    400032: fireShape6
+    400034: groupShape32
+    400036: groupShape32 1
+    400038: groupShape32 2
+    400040: InShape
+    400042: InShape 1
+    400044: InShape 10
+    400046: InShape 11
+    400048: InShape 12
+    400050: InShape 13
+    400052: InShape 14
+    400054: InShape 15
+    400056: InShape 16
+    400058: InShape 17
+    400060: InShape 18
+    400062: InShape 19
+    400064: InShape 2
+    400066: InShape 20
+    400068: InShape 21
+    400070: InShape 22
+    400072: InShape 23
+    400074: InShape 24
+    400076: InShape 25
+    400078: InShape 3
+    400080: InShape 4
+    400082: InShape 5
+    400084: InShape 6
+    400086: InShape 7
+    400088: InShape 8
+    400090: InShape 9
+    400092: monitor_effect2Shape
+    400094: Monitor_offShape
+    400096: Monitor_onShape
+    400098: //RootNode
+    400100: S06_Room_CountryShape
+    400102: woodred1Shape
+    400104: woodred3Shape
+    400106: woodred4Shape
+    400108: woodred5Shape
+    400110: woodred6Shape
+    400112: woodredShape
+    400114: woodredShape2
+    2100000: Ink_shader
+    2100002: A_01_Metal_A_03_nonormal
+    2100004: A_02_Basket
+    2100006: A_03_TV
+    2100008: B_01_Wood_B
+    2100010: B_02_Firewood_Curtain_03
+    2100012: B_03_Firewood_Curtain_01
+    2100014: B_04_Brick_G_01
+    2100016: B_05_Brick_E
+    2100018: B_09_Brick_C
+    2100020: B_10_Brick_B
+    2100022: C_01_Curtain_00
+    2100024: C_02_Metal_A_01
+    2100026: C_03_Firewood_Curtain_02
+    2100028: C_04_CurtainTassel
+    2100030: C_05_Dishes
+    2100032: C_06_Metal_A_02
+    2100034: C_07_Pillar_02
+    2100036: C_08_Wood_A
+    2100038: C_09_Pillar_01
+    2100040: C_11_Wall_02
+    2100042: C_12_Wall_01
+    2100044: D_01_Rug
+    2100046: D_02_Floor_2
+    2100048: D_03_Floor_2048
+    2100050: F_02_Pillar
+    2100052: F_03_Roof
+    2100054: B_06_Fire01
+    2100056: B_07_Fire_B
+    2100058: A_Monitor_anm_noblend
+    2100060: A_04_MonitorEffect01
+    2100062: A_05_Monitor_off
+    2100064: E_01_Brick_D
+    2300000: ashblack1Shape
+    2300002: fire11Shape
+    2300004: fire1Shape
+    2300006: fire2_3Shape
+    2300008: fire2_4Shape
+    2300010: fire4Shape
+    2300012: fire5Shape
+    2300014: fire7Shape
+    2300016: fire8Shape
+    2300018: FirePlace_AshShape
+    2300020: FirePlace_Firewood_B_0Shape
+    2300022: FirePlace_Firewood_B_1Shape
+    2300024: FirePlace_Firewood_B_2Shape
+    2300026: FirePlace_Firewood_B_3Shape
+    2300028: FirePlace_Firewood_B_4Shape
+    2300030: FirePlace_Firewood_B_5Shape
+    2300032: fireShape6
+    2300034: groupShape32
+    2300036: groupShape32 1
+    2300038: groupShape32 2
+    2300040: InShape
+    2300042: InShape 1
+    2300044: InShape 10
+    2300046: InShape 11
+    2300048: InShape 12
+    2300050: InShape 13
+    2300052: InShape 14
+    2300054: InShape 15
+    2300056: InShape 16
+    2300058: InShape 17
+    2300060: InShape 18
+    2300062: InShape 19
+    2300064: InShape 2
+    2300066: InShape 20
+    2300068: InShape 21
+    2300070: InShape 22
+    2300072: InShape 23
+    2300074: InShape 24
+    2300076: InShape 25
+    2300078: InShape 3
+    2300080: InShape 4
+    2300082: InShape 5
+    2300084: InShape 6
+    2300086: InShape 7
+    2300088: InShape 8
+    2300090: InShape 9
+    2300092: monitor_effect2Shape
+    2300094: Monitor_offShape
+    2300096: Monitor_onShape
+    2300098: S06_Room_CountryShape
+    2300100: woodred1Shape
+    2300102: woodred3Shape
+    2300104: woodred4Shape
+    2300106: woodred5Shape
+    2300108: woodred6Shape
+    2300110: woodredShape
+    2300112: woodredShape2
+    3300000: ashblack1Shape
+    3300002: fire11Shape
+    3300004: fire1Shape
+    3300006: fire2_3Shape
+    3300008: fire2_4Shape
+    3300010: fire4Shape
+    3300012: fire5Shape
+    3300014: fire7Shape
+    3300016: fire8Shape
+    3300018: FirePlace_AshShape
+    3300020: FirePlace_Firewood_B_0Shape
+    3300022: FirePlace_Firewood_B_1Shape
+    3300024: FirePlace_Firewood_B_2Shape
+    3300026: FirePlace_Firewood_B_3Shape
+    3300028: FirePlace_Firewood_B_4Shape
+    3300030: FirePlace_Firewood_B_5Shape
+    3300032: fireShape6
+    3300034: groupShape32
+    3300036: groupShape32 1
+    3300038: groupShape32 2
+    3300040: InShape
+    3300042: InShape 1
+    3300044: InShape 10
+    3300046: InShape 11
+    3300048: InShape 12
+    3300050: InShape 13
+    3300052: InShape 14
+    3300054: InShape 15
+    3300056: InShape 16
+    3300058: InShape 17
+    3300060: InShape 18
+    3300062: InShape 19
+    3300064: InShape 2
+    3300066: InShape 20
+    3300068: InShape 21
+    3300070: InShape 22
+    3300072: InShape 23
+    3300074: InShape 24
+    3300076: InShape 25
+    3300078: InShape 3
+    3300080: InShape 4
+    3300082: InShape 5
+    3300084: InShape 6
+    3300086: InShape 7
+    3300088: InShape 8
+    3300090: InShape 9
+    3300092: monitor_effect2Shape
+    3300094: Monitor_offShape
+    3300096: Monitor_onShape
+    3300098: S06_Room_CountryShape
+    3300100: woodred1Shape
+    3300102: woodred3Shape
+    3300104: woodred4Shape
+    3300106: woodred5Shape
+    3300108: woodred6Shape
+    3300110: woodredShape
+    3300112: woodredShape2
+    4300000: S06_Room_CountryShape
+    4300002: InShape
+    4300004: InShape
+    4300006: InShape
+    4300008: InShape
+    4300010: InShape
+    4300012: InShape
+    4300014: InShape
+    4300016: InShape
+    4300018: InShape
+    4300020: InShape
+    4300022: InShape
+    4300024: InShape
+    4300026: InShape
+    4300028: InShape
+    4300030: InShape
+    4300032: InShape
+    4300034: InShape
+    4300036: InShape
+    4300038: InShape
+    4300040: InShape
+    4300042: InShape
+    4300044: InShape
+    4300046: InShape
+    4300048: InShape
+    4300050: InShape
+    4300052: InShape
+    4300054: ashblack1Shape
+    4300056: FirePlace_Firewood_B_5Shape
+    4300058: woodred4Shape
+    4300060: FirePlace_Firewood_B_1Shape
+    4300062: FirePlace_Firewood_B_4Shape
+    4300064: woodred3Shape
+    4300066: FirePlace_Firewood_B_2Shape
+    4300068: woodred6Shape
+    4300070: FirePlace_Firewood_B_0Shape
+    4300072: woodredShape2
+    4300074: woodred5Shape
+    4300076: woodred1Shape
+    4300078: woodredShape
+    4300080: FirePlace_Firewood_B_3Shape
+    4300082: fireShape6
+    4300084: fire5Shape
+    4300086: fire7Shape
+    4300088: fire8Shape
+    4300090: fire2_4Shape
+    4300092: fire4Shape
+    4300094: fire11Shape
+    4300096: fire2_3Shape
+    4300098: fire1Shape
+    4300100: FirePlace_AshShape
+    4300102: Monitor_onShape
+    4300104: monitor_effect2Shape
+    4300106: Monitor_offShape
+    4300108: groupShape32
+    4300110: groupShape32
+    4300112: groupShape32
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

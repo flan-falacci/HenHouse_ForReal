@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Centrixe</author>
+    </contributor>
+    <created>2019-07-04T23:14:54</created>
+    <modified>2019-07-04T23:14:54</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="SFX_GlassDoor">
+      <profile_COMMON>
+        <newparam sid="Glass_col_png-surface">
+          <surface type="2D">
+            <init_from>Glass_col_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Glass_col_png-sampler">
+          <sampler2D>
+            <source>Glass_col_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Glass_col_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Glass_col_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="SFX_GlassWindow">
+      <profile_COMMON>
+        <newparam sid="Glass_Window_col_png-surface">
+          <surface type="2D">
+            <init_from>Glass_Window_col_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Glass_Window_col_png-sampler">
+          <sampler2D>
+            <source>Glass_Window_col_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Glass_Window_col_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Glass_Window_col_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="SFX_Glass_Highlight">
+      <profile_COMMON>
+        <newparam sid="White_col_png-surface">
+          <surface type="2D">
+            <init_from>White_col_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="White_col_png-sampler">
+          <sampler2D>
+            <source>White_col_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="White_col_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="White_col_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="SFX_GlassDoor-material" name="SFX_GlassDoor">
+      <instance_effect url="#SFX_GlassDoor"/>
+    </material>
+    <material id="SFX_GlassWindow-material" name="SFX_GlassWindow">
+      <instance_effect url="#SFX_GlassWindow"/>
+    </material>
+    <material id="SFX_Glass_Highlight-material" name="SFX_Glass_Highlight">
+      <instance_effect url="#SFX_Glass_Highlight"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-GlassShape" name="GlassShape">
+      <mesh>
+        <source id="geom-GlassShape-positions">
+          <float_array id="geom-GlassShape-positions-array" count="144">104.78 108 -694.326 95.9942 108 -794.742 104.78 3.96 -694.326 95.9942 3.96 -794.742 104.78 212.04 -694.326 95.9942 212.04 -794.742 104.78 108 -694.326 95.9942 108 -794.742 -95.9845 108 -794.869 -104.77 108 -694.452 -95.9845 3.96 -794.869 -104.77 3.96 -694.452 -95.9845 212.04 -794.869 -104.77 212.04 -694.452 -95.9845 108 -794.869 -104.77 108 -694.452 -138.364 108 -685.009 -239.164 108 -685.009 -138.364 6 -685.009 -239.164 6 -685.009 -138.364 210 -685.009 -239.164 210 -685.009 -138.364 108 -685.009 -239.164 108 -685.009 -246.59 108 -685.009 -347.39 108 -685.009 -246.59 6 -685.009 -347.39 6 -685.009 -246.59 210 -685.009 -347.39 210 -685.009 -246.59 108 -685.009 -347.39 108 -685.009 348.527 108 -685.009 247.727 108 -685.009 348.527 6 -685.009 247.727 6 -685.009 348.527 210 -685.009 247.727 210 -685.009 348.527 108 -685.009 247.727 108 -685.009 240.302 108 -685.009 139.502 108 -685.009 240.302 6 -685.009 139.502 6 -685.009 240.302 210 -685.009 139.502 210 -685.009 240.302 108 -685.009 139.502 108 -685.009</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape-normals">
+          <float_array id="geom-GlassShape-normals-array" count="144">-0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 -0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 0.9961991 3.05208e-5 0.08710638 3.05324e-5 -0.00270784 0.9999963 3.05324e-5 -0.00270784 0.9999963 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05324e-5 -0.00270784 0.9999963 3.05324e-5 -0.00270784 0.9999963 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape-normals-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape-map-2">
+          <float_array id="geom-GlassShape-map-2-array" count="144">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape-map-2-array" count="48" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape-map0">
+          <float_array id="geom-GlassShape-map0-array" count="144">0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608 0.2 0.5019608 0.5019608</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape-map0-array" count="48" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape-map1">
+          <float_array id="geom-GlassShape-map1-array" count="144">-3.79562e-4 -0.9960938 0 0.9995117 -0.9960938 0 -3.79562e-4 0 0 0.9995117 0 0 -3.79562e-4 0.9999695 0 0.9995117 0.9999695 0 -3.79562e-4 0.003417969 0 0.9995117 0.003417969 0 -3.79562e-4 -0.9960938 0 0.9995117 -0.9960938 0 -3.79562e-4 0 0 0.9995117 0 0 -3.79562e-4 0.9999695 0 0.9995117 0.9999695 0 -3.79562e-4 0.003417969 0 0.9995117 0.003417969 0 1 0.003417969 0 3.05176e-5 0.003417969 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0.003417969 0 3.05176e-5 0.003417969 0 -3.79562e-4 -0.9960938 0 0.9995117 -0.9960938 0 -3.79562e-4 0 0 0.9995117 0 0 -3.79562e-4 0.9999695 0 0.9995117 0.9999695 0 -3.79562e-4 0.003417969 0 0.9995117 0.003417969 0 -3.79562e-4 -0.9960938 0 0.9995117 -0.9960938 0 -3.79562e-4 0 0 0.9995117 0 0 0.9995117 0.9999695 0 -3.79562e-4 0.9999695 0 0.9995117 0.003417969 0 -3.79562e-4 0.003417969 0 -3.79562e-4 -0.9960938 0 0.9995117 -0.9960938 0 -3.79562e-4 0 0 0.9995117 0 0 -3.79562e-4 0.9999695 0 0.9995117 0.9999695 0 -3.79562e-4 0.003417969 0 0.9995117 0.003417969 0</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape-map1-array" count="48" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape-map2">
+          <float_array id="geom-GlassShape-map2-array" count="144">0.6313477 0.6337891 0 0.6313477 0.4418945 0 0.8300781 0.6337891 0 0.8300781 0.4418945 0 0.4331055 0.6337891 0 0.4331055 0.4418945 0 0.6313477 0.6337891 0 0.6313477 0.4418945 0 0.2139893 0.6337891 0 0.2139893 0.4418945 0 0.4123535 0.6337891 0 0.4123535 0.4418945 0 0.01553345 0.6337891 0 0.01553345 0.4418945 0 0.2139893 0.6337891 0 0.2139893 0.4418945 0 0.2038574 0.206543 0 0.007484436 0.206543 0 0.2038574 0.0078125 0 0.007484436 0.0078125 0 0.2038574 0.4052734 0 0.007484436 0.4052734 0 0.2038574 0.206543 0 0.007484436 0.206543 0 0.4174805 0.206543 0 0.2210693 0.206543 0 0.4174805 0.0078125 0 0.2210693 0.0078125 0 0.4174805 0.4052734 0 0.2210693 0.4052734 0 0.4174805 0.206543 0 0.2210693 0.206543 0 0.6308594 0.206543 0 0.4345703 0.206543 0 0.6308594 0.0078125 0 0.4345703 0.0078125 0 0.6308594 0.4052734 0 0.4345703 0.4052734 0 0.6308594 0.206543 0 0.4345703 0.206543 0 0.8461914 0.206543 0 0.6494141 0.206543 0 0.8461914 0.0078125 0 0.6494141 0.0078125 0 0.8461914 0.4052734 0 0.6494141 0.4052734 0 0.8461914 0.206543 0 0.6494141 0.206543 0</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape-map2-array" count="48" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-GlassShape-vertices">
+          <input semantic="POSITION" source="#geom-GlassShape-positions"/>
+        </vertices>
+        <triangles material="SFX_GlassDoor" count="24">
+          <input semantic="VERTEX" source="#geom-GlassShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-GlassShape-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-GlassShape-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-GlassShape-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-GlassShape-map2" offset="4" set="1"/>
+          <p>0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 3 3 3 3 3 4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 5 5 5 5 5 7 7 7 7 7 8 8 8 8 8 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 9 9 9 9 9 11 11 11 11 11 12 12 12 12 12 13 13 13 13 13 14 14 14 14 14 14 14 14 14 14 13 13 13 13 13 15 15 15 15 15 16 16 16 16 16 17 17 17 17 17 18 18 18 18 18 18 18 18 18 18 17 17 17 17 17 19 19 19 19 19 20 20 20 20 20 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 21 21 21 21 21 23 23 23 23 23 24 24 24 24 24 25 25 25 25 25 26 26 26 26 26 26 26 26 26 26 25 25 25 25 25 27 27 27 27 27 28 28 28 28 28 29 29 29 29 29 30 30 30 30 30 30 30 30 30 30 29 29 29 29 29 31 31 31 31 31 32 32 32 32 32 33 33 33 33 33 34 34 34 34 34 34 34 34 34 34 33 33 33 33 33 35 35 35 35 35 36 36 36 36 36 37 37 37 37 37 38 38 38 38 38 38 38 38 38 38 37 37 37 37 37 39 39 39 39 39 40 40 40 40 40 41 41 41 41 41 42 42 42 42 42 42 42 42 42 42 41 41 41 41 41 43 43 43 43 43 44 44 44 44 44 45 45 45 45 45 46 46 46 46 46 46 46 46 46 46 45 45 45 45 45 47 47 47 47 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-GlassShape_1" name="GlassShape">
+      <mesh>
+        <source id="geom-GlassShape_1-positions">
+          <float_array id="geom-GlassShape_1-positions-array" count="96">-490.233 214.206 -431.362 -532.657 214.197 -380.803 -490.233 86.5096 -431.362 -532.657 86.5009 -380.803 -574.8 214.188 -330.579 -574.8 214.192 -265.016 -574.8 86.4921 -330.579 -574.8 86.4964 -265.016 -574.8 214.205 -67.4523 -532.658 214.204 -17.2289 -574.8 86.5091 -67.4523 -532.658 86.5078 -17.2289 -574.8 214.197 -199.015 -574.8 214.201 -133.015 -574.8 86.5006 -199.015 -574.8 86.5049 -133.015 -574.8 214.192 -265.016 -574.8 214.197 -199.015 -574.8 86.4964 -265.016 -574.8 86.5006 -199.015 -574.8 214.201 -133.015 -574.8 214.205 -67.4523 -574.8 86.5049 -133.015 -574.8 86.5091 -67.4523 -532.658 214.204 -17.2289 -490.233 214.203 33.331 -532.658 86.5078 -17.2289 -490.233 86.5065 33.331 -532.657 214.197 -380.803 -574.8 214.188 -330.579 -532.657 86.5009 -380.803 -574.8 86.4921 -330.579</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape_1-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape_1-normals">
+          <float_array id="geom-GlassShape_1-normals-array" count="96">0.7659743 3.05315e-5 0.6428713 0.7659743 3.05315e-5 0.6428713 0.7659743 3.05315e-5 0.6428713 0.7659743 3.05315e-5 0.6428713 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 -0.6428713 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 -0.6428713 0.7659743 3.05315e-5 0.6428713 0.7659743 3.05315e-5 0.6428713 0.7659743 3.05315e-5 0.6428713 0.7659743 3.05315e-5 0.6428713</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape_1-normals-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape_1-map-2">
+          <float_array id="geom-GlassShape_1-map-2-array" count="96">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape_1-map-2-array" count="32" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape_1-map0">
+          <float_array id="geom-GlassShape_1-map0-array" count="96">0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608 0.1490196 0.5019608 0.5019608</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape_1-map0-array" count="32" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape_1-map1">
+          <float_array id="geom-GlassShape_1-map1-array" count="96">1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0 1 0.9999695 0 3.05176e-5 0.9999695 0 1 0 0 3.05176e-5 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape_1-map1-array" count="32" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-GlassShape_1-map2">
+          <float_array id="geom-GlassShape_1-map2-array" count="96">0.9931641 0.9914551 0 0.8691406 0.9914322 0 0.9931641 0.6660156 0 0.8691406 0.6660156 0 0.7460938 0.9914093 0 0.6230469 0.9914169 0 0.7460938 0.6660156 0 0.6230469 0.6660156 0 0.251709 0.9914551 0 0.1286621 0.9914474 0 0.251709 0.6660156 0 0.1286621 0.6660156 0 0.4990234 0.9914322 0 0.375 0.9914398 0 0.4990234 0.6660156 0 0.375 0.6660156 0 0.6230469 0.9914169 0 0.4990234 0.9914322 0 0.6230469 0.6660156 0 0.4990234 0.6660156 0 0.375 0.9914398 0 0.251709 0.9914551 0 0.375 0.6660156 0 0.251709 0.6660156 0 0.1286621 0.9914474 0 0.004665375 0.9914474 0 0.1286621 0.6660156 0 0.004653931 0.6660156 0 0.8691406 0.9914322 0 0.7460938 0.9914093 0 0.8691406 0.6660156 0 0.7460938 0.6660156 0</float_array>
+          <technique_common>
+            <accessor source="#geom-GlassShape_1-map2-array" count="32" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-GlassShape_1-vertices">
+          <input semantic="POSITION" source="#geom-GlassShape_1-positions"/>
+        </vertices>
+        <triangles material="SFX_GlassWindow" count="16">
+          <input semantic="VERTEX" source="#geom-GlassShape_1-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-GlassShape_1-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-GlassShape_1-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-GlassShape_1-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-GlassShape_1-map2" offset="4" set="1"/>
+          <p>0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 3 3 3 3 3 4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 5 5 5 5 5 7 7 7 7 7 8 8 8 8 8 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 9 9 9 9 9 11 11 11 11 11 12 12 12 12 12 13 13 13 13 13 14 14 14 14 14 14 14 14 14 14 13 13 13 13 13 15 15 15 15 15 16 16 16 16 16 17 17 17 17 17 18 18 18 18 18 18 18 18 18 18 17 17 17 17 17 19 19 19 19 19 20 20 20 20 20 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 21 21 21 21 21 23 23 23 23 23 24 24 24 24 24 25 25 25 25 25 26 26 26 26 26 26 26 26 26 26 25 25 25 25 25 27 27 27 27 27 28 28 28 28 28 29 29 29 29 29 30 30 30 30 30 30 30 30 30 30 29 29 29 29 29 31 31 31 31 31</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Glass_HighLightShape" name="Glass_HighLightShape">
+      <mesh>
+        <source id="geom-Glass_HighLightShape-positions">
+          <float_array id="geom-Glass_HighLightShape-positions-array" count="366">-284.164 197.832 -683 -284.164 198.83 -683 -285.262 197.832 -683 -257.834 197.832 -683 -257.834 198.83 -683 -270.999 197.832 -683 -270.999 198.83 -683 -283.896 16.7607 -683 -259.518 16.7607 -683 -285.262 17.9721 -683 -257.834 17.9721 -683 -246.59 6 -683 -249.937 7.31707 -683 -296.945 6 -683 -293.638 7.34674 -683 -231.671 128.333 -683 -226.81 133.252 -683 -231.531 129.475 -683 -226.974 134.086 -683 -220.734 139.4 -683 -221.279 139.85 -683 -215.583 145.613 -683 -214.658 145.548 -683 -211.026 150.224 -683 -209.798 150.466 -683 -209.887 151.377 -683 -208.582 151.696 -683 -215.941 149.254 -683 -214.712 149.497 -683 -215.106 150.099 -683 -213.801 150.419 -683 -223.456 141.65 -683 -222.912 141.2 -683 -219.281 145.874 -683 -218.356 145.809 -683 -227.467 136.59 -683 -227.631 137.425 -683 -230.971 134.045 -683 -231.111 132.902 -683 -232.022 131.981 -683 -231.806 133.2 -683 -232.67 128.323 -683 -232.886 127.103 -683 -239.164 159 -683 -236.014 162.188 -683 -239.164 159.637 -683 -236.172 162.666 -683 -233.179 165.694 -683 -232.864 165.375 -683 -227.194 171.75 -683 -226.564 171.75 -683 -235.174 163.675 -683 -234.964 163.25 -683 -234.124 166.65 -683 -233.809 166.331 -683 -229.084 171.75 -683 -228.454 171.75 -683 -235.804 164.95 -683 -235.594 164.525 -683 -236.644 164.1 -683 -236.487 163.622 -683 -239.164 160.913 -683 -239.164 161.55 -683 189.902 57 -683 189.902 65.6642 -683 187.802 59.125 -683 188.117 67.4282 -683 189.902 72.1642 -683 189.902 74.3285 -683 188.432 73.6573 -683 188.523 75.7315 -683 189.902 65.6642 -683 189.902 72.1642 -683 188.117 67.4282 -683 188.432 73.6573 -683 156.106 106.507 -683 158.188 106.597 -683 148.854 106.236 -683 156.106 106.507 -683 141.602 105.875 -683 148.854 106.236 -683 154.637 108 -683 156.809 108 -683 147.069 108 -683 154.637 108 -683 139.502 108 -683 147.069 108 -683 189.902 72.1642 -683 191.373 73.6573 -683 189.902 74.3285 -683 191.293 75.7315 -683 191.932 59.125 -683 189.902 65.6642 -683 191.613 67.4282 -683 189.902 65.6642 -683 191.613 67.4282 -683 189.902 72.1642 -683 191.373 73.6573 -683 236.592 105.875 -683 229.25 106.236 -683 223.742 106.507 -683 229.25 106.236 -683 221.908 106.597 -683 223.742 106.507 -683 238.622 108 -683 230.961 108 -683 225.213 108 -683 230.961 108 -683 223.3 108 -683 225.213 108 -683 191.364 153.776 -683 191.424 155.649 -683 189.902 155.252 -683 189.902 157.186 -683 190.945 140.663 -683 191.005 142.536 -683 189.902 141.717 -683 189.902 143.65 -683 225.215 108 -683 223.3 108 -683 236.707 108 -683 238.622 108 -683</float_array>
+          <technique_common>
+            <accessor source="#geom-Glass_HighLightShape-positions-array" count="122" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Glass_HighLightShape-normals">
+          <float_array id="geom-Glass_HighLightShape-normals-array" count="366">3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 -3.13222e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 -3.11732e-5 1 3.05176e-5 3.05176e-5 1 -3.54648e-5 3.18587e-5 1 -3.30508e-5 -3.56138e-5 1 -3.22461e-5 -3.57032e-5 1 -3.62992e-5 3.19481e-5 1 -3.18885e-5 4.4167e-5 1 -3.25739e-5 -3.43323e-5 1 -3.41237e-5 -3.30508e-5 1 -3.20375e-5 4.46737e-5 1 -4.53889e-5 3.31402e-5 1 4.67002e-5 -4.57764e-5 1 -3.23355e-5 -3.68357e-5 1 3.35574e-5 -3.16501e-5 1 7.37906e-5 -6.10352e-5 1 -6.46114e-5 -3.3915e-5 1 -4.9144e-5 -3.22759e-5 1 4.64916e-5 -4.57764e-5 1 6.2108e-5 -6.10054e-5 1 -3.29912e-5 3.05176e-5 1 4.60446e-5 -4.57466e-5 1 3.17693e-5 -3.1054e-5 1 -4.79519e-5 -3.66271e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.87728e-5 3.05176e-5 1 5.46575e-5 -4.8697e-5 1 9.84073e-5 -7.27177e-5 1 9.46522e-5 -5.65946e-5 1 4.12464e-5 3.05176e-5 1 4.79519e-5 3.05176e-5 1 4.79519e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.26335e-5 -3.1352e-5 1 3.54648e-5 3.05176e-5 1 1.81317e-4 -1.04368e-4 1 1.13487e-4 -6.2108e-5 1 3.44217e-5 -3.19481e-5 1 -3.3319e-5 3.44813e-5 1 -1.55807e-4 9.57251e-5 1 -6.22869e-5 5.44488e-5 1 -1.11043e-4 9.57251e-5 1 -7.79033e-5 5.44488e-5 1 -4.89354e-5 3.05176e-5 1 -3.28124e-5 3.05176e-5 1 -6.81877e-5 5.44488e-5 1 -7.98702e-5 9.57251e-5 1 3.45409e-5 3.05176e-5 1 -5.25713e-5 5.44488e-5 1 3.05176e-5 3.05176e-5 1 -3.51071e-5 3.05176e-5 1 -3.83556e-5 3.05176e-5 1 5.12302e-5 3.05176e-5 1 -4.04716e-5 3.05176e-5 1 -5.32269e-5 5.44488e-5 1 -3.21865e-5 3.26037e-5 1 3.05176e-5 3.05176e-5 1 -4.20213e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.73423e-5 3.05176e-5 1 -3.17395e-5 3.21567e-5 1 3.05176e-5 3.22163e-5 1 3.15905e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.73423e-5 3.05176e-5 1 -3.33786e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.15905e-5 3.05176e-5 1 3.15905e-5 3.05176e-5 1 3.15905e-5 3.05176e-5 1 3.17991e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.18885e-5 -3.43025e-5 1 3.17991e-5 -3.6031e-5 1 3.66569e-5 -3.41535e-5 1 3.66569e-5 -3.41535e-5 1 3.66569e-5 3.05176e-5 1 3.66569e-5 3.05176e-5 1 -3.47495e-5 -3.31104e-5 1 -3.35872e-5 -3.24547e-5 1 3.05176e-5 3.22163e-5 1 3.18885e-5 -3.43025e-5 1 -4.15444e-5 3.15607e-5 1 -4.15444e-5 3.15607e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 -3.35872e-5 -3.24547e-5 1 3.17991e-5 3.05176e-5 1 3.55244e-5 -3.38256e-5 1 3.28124e-5 -3.77595e-5 1 3.65674e-5 -3.54648e-5 1 -3.80576e-5 -4.22001e-5 1 3.28124e-5 -3.77595e-5 1 3.8743e-5 -3.26335e-5 1 3.6031e-5 -3.19779e-5 1 -3.80576e-5 -4.22001e-5 1 -3.17395e-5 3.21567e-5 1 3.27528e-5 3.29018e-5 1 3.55244e-5 -3.38256e-5 1 -3.15011e-5 3.42131e-5 1 3.27528e-5 3.29018e-5 1 3.6031e-5 -3.19779e-5 1 -3.33786e-5 3.05176e-5 1 -3.15011e-5 3.42131e-5 1 3.15607e-5 3.05176e-5 1 -4.63724e-5 3.05176e-5 1 -3.74019e-5 3.05176e-5 1 3.15607e-5 3.05176e-5 1 -3.31402e-5 3.05176e-5 1 -3.68357e-5 3.05176e-5 1 -4.53293e-5 3.05176e-5 1 3.05176e-5 3.05176e-5 1 3.05176e-5 3.68953e-5 1 3.05176e-5 -3.11434e-5 1 3.05176e-5 3.05176e-5 1 -3.78489e-5 3.05176e-5 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Glass_HighLightShape-normals-array" count="122" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Glass_HighLightShape-map-2">
+          <float_array id="geom-Glass_HighLightShape-map-2-array" count="366">1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0.1015625 0.1015625 0.1015625 0.1015625 0.1015625 0.1015625 0.0703125 0.0703125 0.0703125 0.0078125 0.0078125 0.0078125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03125 0.03125 0.03125 0.03125 0.03125 0.03125 0 0 0 0.0078125 0.0078125 0.0078125 0 0 0 0 0 0 0 0 0 0 0 0 0.0546875 0.0546875 0.0546875 0 0 0 0 0 0 0 0 0 0.1015625 0.1015625 0.1015625 0 0 0 0.1015625 0.1015625 0.1015625 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.046875 0.046875 0.046875 0 0 0 0 0 0 0 0 0 0.0703125 0.0703125 0.0703125 0 0 0 0 0 0 0.046875 0.046875 0.046875 0 0 0 0 0 0 0 0 0 0.0703125 0.0703125 0.0703125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03125 0.03125 0.03125 0 0 0 0.03125 0.03125 0.03125 0 0 0 0 0 0 0.03125 0.03125 0.03125 0 0 0 0.03125 0.03125 0.03125 0.0234375 0.0234375 0.0234375 0 0 0 0 0 0 0.0234375 0.0234375 0.0234375 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03125 0.03125 0.03125 0.03125 0.03125 0.03125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03125 0.03125 0.03125 0.03125 0.03125 0.03125 0 0 0 0 0 0 0.03125 0.03125 0.03125 0 0 0 0 0 0 0.03125 0.03125 0.03125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1015625 0.1015625 0.1015625 0 0 0 0 0 0 0 0 0 0 0 0 0.1015625 0.1015625 0.1015625 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Glass_HighLightShape-map-2-array" count="122" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Glass_HighLightShape-map0">
+          <float_array id="geom-Glass_HighLightShape-map0-array" count="366">0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608 0.5019608</float_array>
+          <technique_common>
+            <accessor source="#geom-Glass_HighLightShape-map0-array" count="122" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Glass_HighLightShape-map1">
+          <float_array id="geom-Glass_HighLightShape-map1-array" count="366">0.3723145 0.8811035 0 0.3723145 0.8908691 0 0.3830566 0.8811035 0 0.111145 0.8811035 0 0.111145 0.8908691 0 0.2416992 0.8811035 0 0.2416992 0.8908691 0 0.3696289 -0.1044922 0 0.1278076 -0.1044922 0 0.3830566 -0.1162109 0 0.111145 -0.1162109 0 -3.79562e-4 0 0 0.0328064 -0.01269531 0 0.4990234 0 0 0.4663086 -0.01269531 0 0.07434082 0.2021484 0 0.1225586 0.25 0 0.07568359 0.2133789 0 0.1209106 0.2583008 0 0.1827393 0.3100586 0 0.1773682 0.3144531 0 0.2338867 0.3710937 0 0.243042 0.3701172 0 0.2790527 0.4160156 0 0.2912598 0.418457 0 0.2902832 0.4272461 0 0.3032227 0.4301758 0 0.2303467 0.40625 0 0.2425537 0.4086914 0 0.2386475 0.4145508 0 0.2514648 0.4179687 0 0.1557617 0.3320312 0 0.1611328 0.3276367 0 0.1971436 0.3735352 0 0.2064209 0.3730469 0 0.1160278 0.2827148 0 0.1143799 0.2910156 0 0.08123779 0.2578125 0 0.07983398 0.246582 0 0.07080078 0.237793 0 0.07293701 0.2495117 0 0.06439209 0.2016602 0 0.06228638 0.1899414 0 3.05176e-5 0.501709 0 0.03125 0.5327148 0 3.05176e-5 0.5078125 0 0.02967834 0.5373535 0 0.05935669 0.5671387 0 0.0625 0.5639648 0 0.1187134 0.6262207 0 0.125 0.6262207 0 0.0395813 0.5473633 0 0.04165649 0.5432129 0 0.04998779 0.576416 0 0.05310059 0.5732422 0 0.09997559 0.6262207 0 0.1062012 0.6262207 0 0.0333252 0.5598145 0 0.03540039 0.5556641 0 0.0249939 0.5515137 0 0.02655029 0.546875 0 3.05176e-5 0.5202637 0 3.05176e-5 0.5266113 0 0.4995117 -0.4980469 0 0.4995117 -0.5830078 0 0.5200195 -0.5185547 0 0.5170898 -0.5996094 0 0.4995117 -0.6464844 0 0.4995117 -0.6669922 0 0.5141602 -0.6601563 0 0.5131836 -0.6806641 0 0.4995117 -0.5830078 0 0.4995117 -0.6464844 0 0.5170898 -0.5996094 0 0.5141602 -0.6601563 0 0.8344727 -0.9814453 0 0.8139648 -0.9824219 0 0.9067383 -0.9785156 0 0.8344727 -0.9814453 0 0.9785156 -0.9755859 0 0.9067383 -0.9785156 0 0.8491211 -0.9960938 0 0.8276367 -0.9960938 0 0.9243164 -0.9960938 0 0.8491211 -0.9960938 0 0.9995117 -0.9960938 0 0.9243164 -0.9960938 0 0.4995117 -0.6464844 0 0.4848633 -0.6601563 0 0.4995117 -0.6669922 0 0.4855957 -0.6806641 0 0.479248 -0.5185547 0 0.4995117 -0.5830078 0 0.4824219 -0.5996094 0 0.4995117 -0.5830078 0 0.4824219 -0.5996094 0 0.4995117 -0.6464844 0 0.4848633 -0.6601563 0 0.03640747 -0.9755859 0 0.1092529 -0.9785156 0 0.1638184 -0.9814453 0 0.1092529 -0.9785156 0 0.1820068 -0.9824219 0 0.1638184 -0.9814453 0 0.01628113 -0.9960938 0 0.09228516 -0.9960938 0 0.149292 -0.9960938 0 0.09228516 -0.9960938 0 0.1682129 -0.9960938 0 0.149292 -0.9960938 0 0.4851074 0.4506836 0 0.484375 0.46875 0 0.4995117 0.4648437 0 0.4995117 0.4838867 0 0.4892578 0.3222656 0 0.4885254 0.3408203 0 0.4995117 0.3330078 0 0.4995117 0.3515625 0 0.149292 0.003417969 0 0.1682129 0.003417969 0 0.03527832 0.003417969 0 0.01628113 0.003417969 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Glass_HighLightShape-map1-array" count="122" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Glass_HighLightShape-map2">
+          <float_array id="geom-Glass_HighLightShape-map2-array" count="366">0.3442383 0.3813477 0 0.3442383 0.3833008 0 0.342041 0.3813477 0 0.3955078 0.3813477 0 0.3955078 0.3833008 0 0.369873 0.3813477 0 0.369873 0.3833008 0 0.3447266 0.02880859 0 0.3920898 0.02880859 0 0.342041 0.03125 0 0.3955078 0.03125 0 0.4174805 0.0078125 0 0.4108887 0.01025391 0 0.3193359 0.0078125 0 0.3256836 0.01025391 0 0.02207947 0.2460937 0 0.03155518 0.2558594 0 0.02235413 0.2480469 0 0.03123474 0.2573242 0 0.04336548 0.2675781 0 0.04232788 0.2685547 0 0.05340576 0.2797852 0 0.0552063 0.2797852 0 0.06228638 0.2885742 0 0.06469727 0.2890625 0 0.06451416 0.2910156 0 0.0670166 0.2915039 0 0.05270386 0.2866211 0 0.05511475 0.2871094 0 0.05435181 0.2885742 0 0.05688477 0.2890625 0 0.03808594 0.2719727 0 0.03912354 0.2709961 0 0.04620361 0.2802734 0 0.04800415 0.2802734 0 0.03027344 0.262207 0 0.029953 0.2636719 0 0.0234375 0.2573242 0 0.02316284 0.2548828 0 0.02139282 0.2529297 0 0.02182007 0.2553711 0 0.02012634 0.2460937 0 0.01971436 0.2436523 0 0.007484436 0.3056641 0 0.01361847 0.3120117 0 0.007484436 0.3071289 0 0.01331329 0.3129883 0 0.01913452 0.3188477 0 0.01976013 0.3183594 0 0.03079224 0.3305664 0 0.03201294 0.3305664 0 0.01525879 0.3149414 0 0.01565552 0.3139648 0 0.01730347 0.3208008 0 0.01791382 0.3203125 0 0.02711487 0.3305664 0 0.02835083 0.3305664 0 0.01403046 0.3173828 0 0.01443481 0.3164062 0 0.01239014 0.315918 0 0.01270294 0.3149414 0 0.007484436 0.3095703 0 0.007484436 0.3105469 0 0.7475586 0.1069336 0 0.7475586 0.1240234 0 0.7436523 0.1113281 0 0.7441406 0.1274414 0 0.7475586 0.1367187 0 0.7475586 0.140625 0 0.7451172 0.1396484 0 0.7451172 0.1435547 0 0.7475586 0.1240234 0 0.7475586 0.1367187 0 0.7441406 0.1274414 0 0.7451172 0.1396484 0 0.6821289 0.2036133 0 0.6860352 0.2036133 0 0.6679688 0.203125 0 0.6821289 0.2036133 0 0.6538086 0.2021484 0 0.6679688 0.203125 0 0.6791992 0.206543 0 0.6831055 0.206543 0 0.6645508 0.206543 0 0.6791992 0.206543 0 0.6494141 0.206543 0 0.6645508 0.206543 0 0.7475586 0.1367187 0 0.7504883 0.1396484 0 0.7475586 0.140625 0 0.7504883 0.1435547 0 0.7519531 0.1113281 0 0.7475586 0.1240234 0 0.7509766 0.1274414 0 0.7475586 0.1240234 0 0.7509766 0.1274414 0 0.7475586 0.1367187 0 0.7504883 0.1396484 0 0.8388672 0.2021484 0 0.8242188 0.203125 0 0.8134766 0.2036133 0 0.8242188 0.203125 0 0.8100586 0.2036133 0 0.8134766 0.2036133 0 0.8427734 0.206543 0 0.8276367 0.206543 0 0.8164063 0.206543 0 0.8276367 0.206543 0 0.8129883 0.206543 0 0.8164063 0.206543 0 0.7504883 0.2954102 0 0.7509766 0.2993164 0 0.7475586 0.2983398 0 0.7475586 0.3022461 0 0.75 0.2700195 0 0.75 0.2739258 0 0.7475586 0.2719727 0 0.7475586 0.2758789 0 0.8164063 0.206543 0 0.8129883 0.206543 0 0.8388672 0.206543 0 0.8427734 0.206543 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Glass_HighLightShape-map2-array" count="122" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Glass_HighLightShape-vertices">
+          <input semantic="POSITION" source="#geom-Glass_HighLightShape-positions"/>
+        </vertices>
+        <triangles material="SFX_Glass_Highlight" count="123">
+          <input semantic="VERTEX" source="#geom-Glass_HighLightShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Glass_HighLightShape-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Glass_HighLightShape-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Glass_HighLightShape-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Glass_HighLightShape-map2" offset="4" set="1"/>
+          <p>0 0 0 0 0 6 1 6 6 6 1 2 1 1 1 5 3 5 5 5 6 1 6 6 6 0 0 0 0 0 0 0 0 0 0 1 2 1 1 1 2 4 2 2 2 5 3 5 5 5 4 5 4 4 4 6 1 6 6 6 3 6 3 3 3 4 5 4 4 4 5 3 5 5 5 7 7 7 7 7 12 8 12 12 12 8 9 8 8 8 14 10 14 14 14 12 8 12 12 12 7 7 7 7 7 9 11 9 9 9 14 10 14 14 14 7 7 7 7 7 7 7 7 7 7 8 9 8 8 8 9 11 9 9 9 13 12 13 13 13 12 8 12 12 12 14 10 14 14 14 11 13 11 11 11 12 8 12 12 12 13 12 13 13 13 12 8 12 12 12 10 14 10 10 10 8 9 8 8 8 11 13 11 11 11 10 14 10 10 10 12 8 12 12 12 9 11 9 9 9 8 9 8 8 8 10 14 10 10 10 13 12 13 13 13 14 10 14 14 14 9 11 9 9 9 41 15 41 41 41 15 16 15 15 15 17 17 17 17 17 42 18 42 42 42 15 16 15 15 15 41 15 41 41 41 15 16 15 15 15 16 19 16 16 16 17 17 17 17 17 41 15 41 41 41 17 17 17 17 17 39 20 39 39 39 39 20 39 39 39 17 17 17 17 17 38 21 38 38 38 18 22 18 18 18 38 21 38 38 38 17 17 17 17 17 17 17 17 17 17 16 19 16 16 16 18 22 18 18 18 16 19 16 16 16 19 23 19 19 19 18 22 18 18 18 35 24 35 35 35 38 21 38 38 38 18 22 18 18 18 18 22 18 18 18 20 25 20 20 20 35 24 35 35 35 18 22 18 18 18 19 23 19 19 19 20 25 20 20 20 40 26 40 40 40 38 21 38 38 38 37 27 37 37 37 39 20 39 39 39 38 21 38 38 38 40 26 40 40 40 35 24 35 35 35 37 27 37 37 37 38 21 38 38 38 35 24 35 35 35 20 25 20 20 20 32 28 32 32 32 36 29 36 36 36 37 27 37 37 37 35 24 35 35 35 35 24 35 35 35 32 28 32 32 32 36 29 36 36 36 34 30 34 34 34 20 25 20 20 20 21 31 21 21 21 32 28 32 32 32 20 25 20 20 20 34 30 34 34 34 20 25 20 20 20 19 23 19 19 19 21 31 21 21 21 21 31 21 21 21 19 23 19 19 19 22 32 22 22 22 22 32 22 22 22 23 33 23 23 23 21 31 21 21 21 21 31 21 21 21 28 34 28 28 28 34 30 34 34 34 23 33 23 23 23 28 34 28 28 28 21 31 21 21 21 34 30 34 34 34 27 35 27 27 27 33 36 33 33 33 28 34 28 28 28 27 35 27 27 27 34 30 34 34 34 33 36 33 33 33 32 28 32 32 32 34 30 34 34 34 36 29 36 36 36 32 28 32 32 32 31 37 31 31 31 31 37 31 31 31 32 28 32 32 32 33 36 33 33 33 27 35 27 27 27 28 34 28 28 28 29 38 29 29 29 28 34 28 28 28 23 33 23 23 23 30 39 30 30 30 29 38 29 29 29 28 34 28 28 28 30 39 30 30 30 24 40 24 24 24 23 33 23 23 23 22 32 22 22 22 30 39 30 30 30 23 33 23 23 23 25 41 25 25 25 23 33 23 23 23 24 40 24 24 24 25 41 25 25 25 25 41 25 25 25 24 40 24 24 24 26 42 26 26 26 43 43 43 43 43 44 44 44 44 44 45 45 45 45 45 52 46 52 52 52 46 47 46 46 46 44 44 44 44 44 45 45 45 45 45 44 44 44 44 44 46 47 46 46 46 45 45 45 45 45 46 47 46 46 46 61 48 61 61 61 61 48 61 61 61 46 47 46 46 46 60 49 60 60 60 46 47 46 46 46 51 50 51 51 51 60 49 60 60 60 51 50 51 51 51 46 47 46 46 46 52 46 52 52 52 48 51 48 48 48 51 50 51 51 51 52 46 52 52 52 60 49 60 60 60 51 50 51 51 51 58 52 58 58 58 51 50 51 51 51 47 53 47 47 47 58 52 58 58 58 47 53 47 47 47 51 50 51 51 51 48 51 48 48 48 62 54 62 62 62 60 49 60 60 60 59 55 59 59 59 61 48 61 61 61 60 49 60 60 60 62 54 62 62 62 58 52 58 58 58 59 55 59 59 59 60 49 60 60 60 58 52 58 58 58 47 53 47 47 47 54 56 54 54 54 57 57 57 57 57 59 55 59 59 59 58 52 58 58 58 54 56 54 54 54 57 57 57 57 57 58 52 58 58 58 56 58 56 56 56 47 53 47 47 47 49 59 49 49 49 54 56 54 54 54 47 53 47 47 47 56 58 56 56 56 47 53 47 47 47 48 51 48 48 48 49 59 49 49 49 49 59 49 49 49 48 51 48 48 48 50 60 50 50 50 55 61 55 55 55 54 56 54 54 54 56 58 56 56 56 53 62 53 53 53 57 57 57 57 57 54 56 54 54 54 53 62 53 53 53 54 56 54 54 54 55 61 55 55 55 63 63 63 63 63 91 64 91 91 91 92 65 92 92 92 63 63 63 63 63 64 66 64 64 64 65 67 65 65 65 91 64 91 91 91 98 68 98 98 98 93 69 93 93 93 92 65 92 92 92 91 64 91 91 91 93 69 93 93 93 98 68 98 98 98 105 70 105 105 105 99 71 99 99 99 104 72 104 104 104 105 70 105 105 105 98 68 98 98 98 93 69 93 93 93 98 68 98 98 98 99 71 99 99 99 65 67 65 65 65 66 73 66 66 66 79 74 79 79 79 65 67 65 65 65 64 66 64 64 64 66 73 66 66 66 79 74 79 79 79 66 73 66 66 66 80 75 80 80 80 86 76 86 86 86 79 74 79 79 79 80 75 80 80 80 85 77 85 85 85 79 74 79 79 79 86 76 86 86 86 67 78 67 67 67 68 79 68 68 68 69 80 69 69 69 69 80 69 69 69 68 79 68 68 68 70 81 70 70 70 76 82 76 76 76 69 80 69 69 69 70 81 70 70 70 75 83 75 75 75 69 80 69 69 69 76 82 76 76 76 82 84 82 82 82 75 83 75 75 75 76 82 76 76 76 81 85 81 81 81 75 83 75 75 75 82 84 82 82 82 71 86 71 71 71 72 87 72 72 72 73 88 73 73 73 73 88 73 73 73 72 87 72 72 72 74 89 74 74 74 78 90 78 78 78 73 88 73 73 73 74 89 74 74 74 77 91 77 77 77 73 88 73 73 73 78 90 78 78 78 84 92 84 84 84 77 91 77 77 77 78 90 78 78 78 83 93 83 83 83 77 91 77 77 77 84 92 84 84 84 87 94 87 87 87 88 95 88 88 88 89 96 89 89 89 103 97 103 103 103 90 98 90 90 90 88 95 88 88 88 89 96 89 89 89 88 95 88 88 88 90 98 90 90 90 108 99 108 108 108 103 97 103 103 103 109 100 109 109 109 102 101 102 102 102 103 97 103 103 103 108 99 108 108 108 102 101 102 102 102 90 98 90 90 90 103 97 103 103 103 94 102 94 94 94 95 103 95 95 95 96 104 96 96 96 101 105 101 101 101 97 106 97 97 97 95 103 95 95 95 96 104 96 96 96 95 103 95 95 95 97 106 97 97 97 106 107 106 106 106 101 105 101 101 101 107 108 107 107 107 100 109 100 100 100 101 105 101 101 101 106 107 106 106 106 100 109 100 100 100 97 106 97 97 97 101 105 101 101 101 120 110 120 120 120 111 111 111 111 111 110 112 110 110 110 118 113 118 118 118 110 112 110 110 110 115 114 115 115 115 120 110 120 120 120 110 112 110 110 110 118 113 118 118 118 117 115 117 117 117 110 112 110 110 110 112 116 112 112 112 115 114 115 115 115 110 112 110 110 110 117 115 117 117 117 110 112 110 110 110 111 111 111 111 111 112 116 112 112 112 121 117 121 121 121 111 111 111 111 111 120 110 120 120 120 112 116 112 112 112 111 111 111 111 111 113 118 113 113 113 116 119 116 116 116 115 114 115 115 115 117 115 117 117 117 119 120 119 119 119 115 114 115 115 115 114 121 114 114 114 118 113 118 118 118 115 114 115 115 115 119 120 119 119 119 114 121 114 114 114 115 114 115 115 115 116 119 116 116 116</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="Glass_Window_col_png">
+      <init_from>./images/S06_room_glass/Glass_Window_col.png</init_from>
+    </image>
+    <image id="Glass_col_png">
+      <init_from>./images/S06_room_glass/Glass_col.png</init_from>
+    </image>
+    <image id="White_col_png">
+      <init_from>./images/S06_room_glass/White_col.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-GlassShape" name="GlassShape">
+        <instance_geometry url="#geom-GlassShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="SFX_GlassDoor" target="#SFX_GlassDoor-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-GlassShape_1" name="GlassShape">
+        <instance_geometry url="#geom-GlassShape_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="SFX_GlassWindow" target="#SFX_GlassWindow-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Glass_HighLightShape" name="Glass_HighLightShape">
+        <instance_geometry url="#geom-Glass_HighLightShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="SFX_Glass_Highlight" target="#SFX_Glass_Highlight-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

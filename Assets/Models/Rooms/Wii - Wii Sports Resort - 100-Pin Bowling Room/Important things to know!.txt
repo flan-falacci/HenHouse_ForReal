@@ -1,0 +1,7 @@
+There are multiple mirror textures,
+
+and the bowling balls are a little weird, so theres a texture (bwg_ball_alpha)
+which are the little white lines on the ball, I made 4 different textures for each corresponding color, 
+if you're using blender put the bwg_ball_alpha textures alpha channel into a Mix RGB's Fac input. Next insert the 
+image texture on the first color input with the color texture of the ball. Switch the Mix RGB to Overlay and plug the
+color into your principled BSDF!

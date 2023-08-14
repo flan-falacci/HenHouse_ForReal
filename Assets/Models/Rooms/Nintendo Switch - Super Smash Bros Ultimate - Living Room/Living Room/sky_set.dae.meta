@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: fc3a2fd981445a249ae7795041148882
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BirchShape
+    100002: BirchShape 1
+    100004: BrickShape
+    100006: BrickShape 1
+    100008: ChairShape
+    100010: EnvironmentAmbientLight
+    100012: flower_aShape
+    100014: flower_aShape1
+    100016: GrassSShape3
+    100018: groupShape22
+    100020: groupShape22 1
+    100022: groupShape24
+    100024: groupShape24 1
+    100026: groupShape25
+    100028: groupShape26
+    100030: groupShape27
+    100032: groupShape28
+    100034: groupShape31
+    100036: Plant_AShape
+    100038: Plant_AShape 1
+    100040: Plant_B_Soil2Shape
+    100042: Plant_DShape
+    100044: Plant_DShape 1
+    100046: Plant_EShape
+    100048: Plant_EShape 1
+    100050: Plant_FShape
+    100052: //RootNode
+    100054: SkyShape
+    100056: Tree_Plane_Shape01
+    100058: Tree_Plane_Shape01 1
+    100060: Tree_Plane_Shape02
+    100062: Tree_Plane_Shape02 1
+    100064: Tree_Plane_Shape02 2
+    100066: Tree_Shrub_BShape
+    100068: Tree_ShrubShape
+    100070: Tree_ShrubShape 1
+    100072: Tree_ShrubShape 2
+    400000: BirchShape
+    400002: BirchShape 1
+    400004: BrickShape
+    400006: BrickShape 1
+    400008: ChairShape
+    400010: EnvironmentAmbientLight
+    400012: flower_aShape
+    400014: flower_aShape1
+    400016: GrassSShape3
+    400018: groupShape22
+    400020: groupShape22 1
+    400022: groupShape24
+    400024: groupShape24 1
+    400026: groupShape25
+    400028: groupShape26
+    400030: groupShape27
+    400032: groupShape28
+    400034: groupShape31
+    400036: Plant_AShape
+    400038: Plant_AShape 1
+    400040: Plant_B_Soil2Shape
+    400042: Plant_DShape
+    400044: Plant_DShape 1
+    400046: Plant_EShape
+    400048: Plant_EShape 1
+    400050: Plant_FShape
+    400052: //RootNode
+    400054: SkyShape
+    400056: Tree_Plane_Shape01
+    400058: Tree_Plane_Shape01 1
+    400060: Tree_Plane_Shape02
+    400062: Tree_Plane_Shape02 1
+    400064: Tree_Plane_Shape02 2
+    400066: Tree_Shrub_BShape
+    400068: Tree_ShrubShape
+    400070: Tree_ShrubShape 1
+    400072: Tree_ShrubShape 2
+    2100000: Out_03_Plant_B
+    2100002: Out_04_Brick_F
+    2100004: Out_01_Plant_A
+    2100006: Out_05_Brick_G_02
+    2100008: Out_02_Tree_Trunk
+    2100010: Out_06_Wood_C
+    2100012: Out_07_PlantC
+    2100014: Out_08_Sky
+    2100016: Out_09_Grass
+    2300000: BirchShape
+    2300002: BirchShape 1
+    2300004: BrickShape
+    2300006: BrickShape 1
+    2300008: ChairShape
+    2300010: flower_aShape
+    2300012: flower_aShape1
+    2300014: GrassSShape3
+    2300016: groupShape22
+    2300018: groupShape22 1
+    2300020: groupShape24
+    2300022: groupShape24 1
+    2300024: groupShape25
+    2300026: groupShape26
+    2300028: groupShape27
+    2300030: groupShape28
+    2300032: groupShape31
+    2300034: Plant_AShape
+    2300036: Plant_AShape 1
+    2300038: Plant_B_Soil2Shape
+    2300040: Plant_DShape
+    2300042: Plant_DShape 1
+    2300044: Plant_EShape
+    2300046: Plant_EShape 1
+    2300048: Plant_FShape
+    2300050: SkyShape
+    2300052: Tree_Plane_Shape01
+    2300054: Tree_Plane_Shape01 1
+    2300056: Tree_Plane_Shape02
+    2300058: Tree_Plane_Shape02 1
+    2300060: Tree_Plane_Shape02 2
+    2300062: Tree_Shrub_BShape
+    2300064: Tree_ShrubShape
+    2300066: Tree_ShrubShape 1
+    2300068: Tree_ShrubShape 2
+    3300000: BirchShape
+    3300002: BirchShape 1
+    3300004: BrickShape
+    3300006: BrickShape 1
+    3300008: ChairShape
+    3300010: flower_aShape
+    3300012: flower_aShape1
+    3300014: GrassSShape3
+    3300016: groupShape22
+    3300018: groupShape22 1
+    3300020: groupShape24
+    3300022: groupShape24 1
+    3300024: groupShape25
+    3300026: groupShape26
+    3300028: groupShape27
+    3300030: groupShape28
+    3300032: groupShape31
+    3300034: Plant_AShape
+    3300036: Plant_AShape 1
+    3300038: Plant_B_Soil2Shape
+    3300040: Plant_DShape
+    3300042: Plant_DShape 1
+    3300044: Plant_EShape
+    3300046: Plant_EShape 1
+    3300048: Plant_FShape
+    3300050: SkyShape
+    3300052: Tree_Plane_Shape01
+    3300054: Tree_Plane_Shape01 1
+    3300056: Tree_Plane_Shape02
+    3300058: Tree_Plane_Shape02 1
+    3300060: Tree_Plane_Shape02 2
+    3300062: Tree_Shrub_BShape
+    3300064: Tree_ShrubShape
+    3300066: Tree_ShrubShape 1
+    3300068: Tree_ShrubShape 2
+    4300000: Plant_B_Soil2Shape
+    4300002: groupShape22
+    4300004: groupShape22
+    4300006: Plant_AShape
+    4300008: Plant_AShape
+    4300010: groupShape24
+    4300012: groupShape24
+    4300014: flower_aShape
+    4300016: groupShape27
+    4300018: groupShape28
+    4300020: groupShape25
+    4300022: Plant_DShape
+    4300024: Plant_DShape
+    4300026: groupShape26
+    4300028: Tree_Shrub_BShape
+    4300030: flower_aShape1
+    4300032: Plant_EShape
+    4300034: Plant_EShape
+    4300036: Tree_ShrubShape
+    4300038: Tree_ShrubShape
+    4300040: Tree_ShrubShape
+    4300042: BirchShape
+    4300044: BirchShape
+    4300046: ChairShape
+    4300048: Plant_FShape
+    4300050: BrickShape
+    4300052: BrickShape
+    4300054: Tree_Plane_Shape01
+    4300056: Tree_Plane_Shape01
+    4300058: groupShape31
+    4300060: Tree_Plane_Shape02
+    4300062: Tree_Plane_Shape02
+    4300064: Tree_Plane_Shape02
+    4300066: SkyShape
+    4300068: GrassSShape3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
