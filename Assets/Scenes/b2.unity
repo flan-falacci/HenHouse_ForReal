@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5332023, g: 0.25097647, b: 0.20385742, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 428035090}
   - component: {fileID: 428035089}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: 100 chickens sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1629,6 +1629,7 @@ MonoBehaviour:
   lerpSpeed: 0.1
   bawk: {fileID: 2017160352}
   exp: {fileID: 53377818}
+  background: {fileID: 428035089}
   blood: {fileID: 8760317103313040447, guid: 795bd5180dc4ac24c8454756f6699ef9, type: 3}
   table: {fileID: 357523000}
   dirLight: {fileID: 1032242298}
@@ -1914,3 +1915,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8677667206244190487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.51578546
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.22207904
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218747, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677667206956218749, guid: 1f995a4299d12504da6b74b2d3b689e8,
+        type: 3}
+      propertyPath: m_Name
+      value: sceneRestarter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f995a4299d12504da6b74b2d3b689e8, type: 3}

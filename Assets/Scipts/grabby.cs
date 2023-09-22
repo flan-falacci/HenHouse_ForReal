@@ -9,10 +9,12 @@ public class grabby : MonoBehaviour
     public Image hand;
 
     float t;
+    float timer; 
     public float lerpSpeed; 
 
     public AudioSource bawk;
     public AudioSource exp;
+    public AudioSource background; 
 
      Vector3 tableTime; 
 
@@ -36,15 +38,30 @@ public class grabby : MonoBehaviour
 
         if (chickenCount >= 8)
         {
-            t += Time.deltaTime * lerpSpeed; 
+            t += Time.deltaTime * lerpSpeed;
+            timer += Time.deltaTime; 
+
             //move the camera in
             Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, tableTime, t);
             Camera.main.transform.LookAt(table.transform);
+            //lower the bg sound
+            background.volume = Mathf.Lerp(background.volume, 0.05f, t);
+            //ALSO PLAY ANOTHER DIFFERENT SPOOKY SOUND HERE
             //lower the light 
             dirLight.intensity = Mathf.Lerp(dirLight.intensity, 0, t);
             RenderSettings.fogColor = Color.black;
             tableLight.SetActive(true);
-           // SceneManager.LoadScene("StartHouse3");
+            //activate blood
+            table.GetComponent<BoxCollider>().enabled = true;
+            if (timer >= 3)
+            {
+                ParticleSystem.Instantiate(blood, table.transform.position, Quaternion.Euler(-90, 0, 0));
+
+                if (timer >= 7)
+                {
+                    SceneManager.LoadScene("StartHouse3"); 
+                }
+            }   
         }
     }
      void FixedUpdate()
@@ -73,4 +90,5 @@ public class grabby : MonoBehaviour
             hand.color = Color.white; 
         }
     }
+
 }
