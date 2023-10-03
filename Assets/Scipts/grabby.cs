@@ -2,34 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class grabby : MonoBehaviour
 {
     public Image hand;
 
     float t;
-    float timer; 
-    public float lerpSpeed; 
+    float timer;
+    public float lerpSpeed;
 
     public AudioSource bawk;
     public AudioSource exp;
-    public AudioSource background; 
+    public AudioSource background;
+    public AudioSource boom;
+    public AudioSource boom2;
 
-     Vector3 tableTime; 
+    Vector3 tableTime;
 
-    int chickenCount; 
+    int chickenCount;
 
     public ParticleSystem blood;
 
+    bool booming;
+    bool booming2;
+
     public GameObject table;
     public Light dirLight;
-    public GameObject tableLight; 
+    public GameObject tableLight;
 
-     void Start()
+    void Start()
     {
         chickenCount = 0;
         tableTime = new Vector3(-1.51f, 1.14f, -1.44f);
+
+        booming = false;
+        booming2 = false;
     }
 
     void Update()
@@ -39,56 +47,64 @@ public class grabby : MonoBehaviour
         if (chickenCount >= 8)
         {
             t += Time.deltaTime * lerpSpeed;
-            timer += Time.deltaTime; 
+            timer += Time.deltaTime;
+
 
             //move the camera in
             Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, tableTime, t);
             Camera.main.transform.LookAt(table.transform);
+            if (!booming)
+            {
+                boom.Play();
+                booming = true; 
+            }
+
             //lower the bg sound
             background.volume = Mathf.Lerp(background.volume, 0.05f, t);
-            //ALSO PLAY ANOTHER DIFFERENT SPOOKY SOUND HERE
+
             //lower the light 
             dirLight.intensity = Mathf.Lerp(dirLight.intensity, 0, t);
             RenderSettings.fogColor = Color.black;
             tableLight.SetActive(true);
             //activate blood
-            table.GetComponent<BoxCollider>().enabled = true;
+            //table.GetComponent<BoxCollider>().enabled = true;
+
             if (timer >= 3)
             {
+
                 ParticleSystem.Instantiate(blood, table.transform.position, Quaternion.Euler(-90, 0, 0));
 
                 if (timer >= 7)
                 {
-                    SceneManager.LoadScene("StartHouse3"); 
+                    SceneManager.LoadScene("StartHouse3");
                 }
-            }   
+            }
         }
     }
-     void FixedUpdate()
+    void FixedUpdate()
     {
         Ray grabRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit; 
+        RaycastHit hit;
 
         if (Physics.Raycast(grabRay, out hit, 100))
         {
-          
-            hand.color = Color.red; 
+
+            hand.color = Color.red;
 
             if (Input.GetMouseButton(0))
             {
                 bawk.Play();
                 exp.Play();
 
-                ParticleSystem.Instantiate(blood, hit.transform.position, Quaternion.Euler(-90,0,0));
+                ParticleSystem.Instantiate(blood, hit.transform.position, Quaternion.Euler(-90, 0, 0));
                 hit.transform.gameObject.SetActive(false);
                 Debug.Log("harvested");
-                chickenCount++; 
+                chickenCount++;
             }
         }
         else
         {
-            hand.color = Color.white; 
+            hand.color = Color.white;
         }
     }
-
 }
