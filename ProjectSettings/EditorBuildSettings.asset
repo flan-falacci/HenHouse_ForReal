@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/c3.unity
     guid: 1b3598a7220554d23978abe7561b28ca
   - enabled: 1
+    path: Assets/Scenes/EndHouse4.unity
+    guid: 3c212a38b1f69304baff76ac399efa06
+  - enabled: 1
     path: Assets/Scenes/ending.unity
     guid: f356956ca292c514b85795190f265cfc
   m_configObjects: {}
