@@ -22,7 +22,7 @@ public class b3 : MonoBehaviour
 
         if (timer >= limit)
         {
-            SceneManager.LoadScene("ending");
+            SceneManager.LoadScene("EndHouse4");
         }
     }
 }

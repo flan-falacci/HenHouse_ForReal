@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EndHouse4.unity
     guid: 3c212a38b1f69304baff76ac399efa06
   - enabled: 1
+    path: Assets/Scenes/forest.unity
+    guid: 4df9ea71cd9c88c46911ec54e9e9dade
+  - enabled: 1
     path: Assets/Scenes/ending.unity
     guid: f356956ca292c514b85795190f265cfc
   m_configObjects: {}

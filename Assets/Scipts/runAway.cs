@@ -24,7 +24,7 @@ public class runAway : MonoBehaviour
 
         if (timer >= Limit)
         {
-            SceneManager.LoadScene("ending"); 
+            SceneManager.LoadScene("EndHouse4"); 
         }
     }
 }

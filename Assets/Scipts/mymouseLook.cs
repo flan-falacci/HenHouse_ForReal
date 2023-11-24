@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mymouseLook : MonoBehaviour
 {
-
+    Camera camera; 
     void Start()
     {
 
@@ -13,9 +13,10 @@ public class mymouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        camera = this.gameObject.GetComponent<Camera>(); 
 
         // cache Main Camera in a variable to use for later
-        var myCam = Camera.main.transform;
+        var myCam = camera.transform;
 
         // rotate camera based on mouse delta speed... X axis is vertical mouse, Y axis is horizontal mouse
         myCam.Rotate(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0f);

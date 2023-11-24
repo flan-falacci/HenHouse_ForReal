@@ -17,7 +17,7 @@ public class endManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Cursor.visible = true; 
     }
 
    public void PlayAgain()
