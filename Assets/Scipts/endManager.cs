@@ -6,12 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class endManager : MonoBehaviour
 {
-    public Text sceneCountText; 
+    public Text sceneCountText;
+    public Text goodEndingMsg; 
 
     // Start is called before the first frame update
     void Start()
     {
-        sceneCountText.text = "you've seen " + sceneChecker.sceneCount + "/9 possible scenes"; 
+        sceneCountText.text = "you've seen " + sceneChecker.sceneCount + "/10 possible scenes"; 
+        if (goodEnding.goodendingunlocked == true)
+        {
+            goodEndingMsg.gameObject.SetActive(true);
+        }
+        else if (goodEnding.goodendingunlocked != true)
+        {
+            goodEndingMsg.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -22,6 +31,7 @@ public class endManager : MonoBehaviour
 
    public void PlayAgain()
     {
+        goodEnding.goodendingunlocked = false;
         SceneManager.LoadScene("StartHouse"); 
     }
 }
