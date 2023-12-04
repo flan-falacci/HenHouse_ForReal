@@ -764,7 +764,7 @@ PrefabInstance:
     - target: {fileID: 7799963291319088747, guid: 97fd24ad9b7e3a04b84a6b56e9bfdcdf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -388
+      value: -365
       objectReference: {fileID: 0}
     - target: {fileID: 7799963291319088747, guid: 97fd24ad9b7e3a04b84a6b56e9bfdcdf,
         type: 3}
@@ -805,6 +805,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589982786473841974, guid: 97fd24ad9b7e3a04b84a6b56e9bfdcdf,
+        type: 3}
+      propertyPath: m_Text
+      value: 'press R to restart scene
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fd24ad9b7e3a04b84a6b56e9bfdcdf, type: 3}
