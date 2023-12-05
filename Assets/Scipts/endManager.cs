@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class endManager : MonoBehaviour
 {
     public Text sceneCountText;
-    public Text goodEndingMsg; 
+    public Text goodEndingMsg;
+    public Text badEndingMsg; 
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +17,12 @@ public class endManager : MonoBehaviour
         if (goodEnding.goodendingunlocked == true)
         {
             goodEndingMsg.gameObject.SetActive(true);
+            badEndingMsg.gameObject.SetActive(false);
         }
         else if (goodEnding.goodendingunlocked != true)
         {
             goodEndingMsg.gameObject.SetActive(false);
+            badEndingMsg.gameObject.SetActive(true);
         }
     }
 

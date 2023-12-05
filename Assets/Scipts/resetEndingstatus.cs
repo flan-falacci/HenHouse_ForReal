@@ -7,12 +7,6 @@ public class resetEndingstatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        goodEnding.goodendingunlocked = false; 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        goodEnding.goodendingunlocked = false;
     }
 }
