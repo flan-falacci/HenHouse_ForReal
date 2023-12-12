@@ -15,7 +15,7 @@ public class wolvesLooking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       float count = 30; 
+       float count = 32; 
         timer += Time.deltaTime; 
 
         if (timer >= count)

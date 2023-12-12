@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class pauseMenu : MonoBehaviour
 {
-    public GameObject pausemenuUI; 
+    public GameObject pausemenuUI;
+    //Scene thisScene; 
+
+    void Start ()
+    {
+      //  thisScene = SceneManager.GetActiveScene(); 
+    }
 
     // Update is called once per frame
     void Update()
@@ -17,6 +23,8 @@ public class pauseMenu : MonoBehaviour
             pausemenuUI.SetActive(true);
             Cursor.visible = true;
             AudioListener.pause = true; 
+          
+           
         }
     }
 
